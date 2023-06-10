@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "AlongSans", sans-serif;;
 }
 body{
     margin: 0;
@@ -11,8 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    font-family: "Poppins", sans-serif;
-
+    font-family: "Gotham A","Gotham B","Source Sans Pro",arial,helvetica,sans-serif;
 }
 
 header{
@@ -33,6 +33,9 @@ header{
     font-weight: 1000;   
     font-size: 30px; 
 }
+/*CSS for Home pages div names of home page is card1, card2}*/
+/*tag of home pages are h2, p, button, Anchor and Icons*/
+
 .card1{
     top: 40%;
     width: 100%;
@@ -46,7 +49,7 @@ header{
 .card1 h2{
     font-size: 3rem;
     font-weight: 900;
-    font-family: "Poppins", sans-serif;
+    font-family: "Gotham A","Gotham B","Source Sans Pro",arial,helvetica,sans-serif;
 }
 .card2{
 
@@ -75,6 +78,121 @@ header{
 .card2 a:hover{
     padding: 0.7%;
 }
+/*css for About pages div names of about pages are abouts, images & history*/
+/*tages of about pages are    */
+.containers{
+    top: 15%;
+    position:absolute;
+    width: 100%;
+    height: 65%;
+    color: rgb(220, 219, 219);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+h2{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    color: wheat;
+    font-family: "Gotham A","Gotham B","Source Sans Pro",arial,helvetica,sans-serif;
+}
+.containers .images{
+    width: 25%;
+    display: grid;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 30px 30px 30px;
+    background-image:url(../img/my_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+.containers .history{
+    line-height: 40px;
+    border-radius: 10px;
+    width: 35%;
+    position: relative;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+    font-family: Source Sans Pro;
+}
+.containers .history button{
+    background: black;
+    width: 50%;
+    height: 20%;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.containers .history a{
+    text-decoration: none;
+    color: wheat;
+}
+/*Css for Portfolio page*/
+.containers .portfolio {
+    top: 15%;
+    position:absolute;
+    width: 100%;
+    height: 65%;
+    color: rgb(220, 219, 219);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containers .portfolio .p1, .p2, .p3{
+    line-height: 40px;
+    border-radius: 10px;
+    width: 25%;
+    position: relative;
+    border: solid red;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+    font-family: Source Sans Pro;
+
+}
+.containers .services{
+    line-height: 40px;
+    border-radius: 10px;
+    width: 35%;
+    position: relative;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+    font-family: Source Sans Pro;
+}
+
+.containers .services li{
+    list-style: none;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.containers .services li:hover{
+    background: rgb(206, 206, 206);
+    padding: 10px;
+    margin: 5px;
+    color: white;
+}
+
+
+
+
+
 
 @media(max-width: 400px)
 {
