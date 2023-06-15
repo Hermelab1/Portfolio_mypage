@@ -94,16 +94,15 @@ header{
 h2{
     font-size: 3rem;
     width: 100%;
+    height: 15%;
     text-align: center;
     color: wheat;
-    font-family: "Gotham A","Gotham B","Source Sans Pro",arial,helvetica,sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 .containers .images{
     width: 25%;
     display: grid;
     position: relative;
-    padding: 20px 20px 20px 20px;
-    margin: 30px 30px 30px 30px;
     background-image:url(../img/my_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,7 +120,7 @@ h2{
     text-align: center;
     padding-top: 5%;
     font-weight: 600;
-    font-family: Source Sans Pro;
+    font-family: "Quicksand", sans-serif;
 }
 .containers .history button{
     background: black;
@@ -137,7 +136,123 @@ h2{
     color: wheat;
 }
 /*Css for Portfolio page*/
-.containers .portfolio {
+.containersp{
+    top: 15%;
+    position:absolute;
+    width: 100%;
+    height: 65%;
+    color: rgb(220, 219, 219);
+}
+.portfolio{
+    top: 0%;
+    position: relative;
+    width: 100%;
+    height: 65%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p1, .p2, .p3{
+    width: 30%;
+    margin-right: 40px;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
+}
+.p1{
+    background-image: url(/img/WeddingEvents.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.p2{
+    background-image: url(/img/Admas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.p3{
+    background-image: url(/img/portfolio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.p1 .overlay, .p2 .overlay, .p3 .overlay{
+    display: none;
+}
+
+.p1::after, .p2::after, .p3::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    content: '';
+    top: 0;
+    transform: .5s;
+    border-radius: 20px;
+    display: block;
+}
+.p1:hover::after, .p2:hover::after, .p3:hover::after{
+    background: linear-gradient(to bottom,rgb(22, 22, 22, 0.95)0,rgba(22, 22, 22, 0.95)25%,rgba(22, 22, 22, 0.95)50%,rgba(22, 22, 22, 0.95)75%,rgba(22, 22, 22, 0.95)100%);
+    display: block;
+}
+.p1 .overlay, .p2 .overlay, .p3 .overlay{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transition: translateY(145px);
+    transition: all .5s cubic-bezier(.13, .62, .81, 91) 0s;
+}
+.p1 .overlay h3, .p2 .overlay h3, .p3 .overlay h3{
+    font-family: big John;
+}
+.p1:hover,.p2:hover,.p3:hover, .overlay{
+    transform: translateY(0);
+}
+
+
+
+
+
+
+/*CSS For service page*/
+.containers .services{
+    line-height: 40px;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.containers .services li{
+    list-style: none;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.containers .services li:hover{
+    background: rgb(206, 206, 206);
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+/*css for contact page*/
+.containersc{
+    border: solid red;
     top: 15%;
     position:absolute;
     width: 100%;
@@ -147,47 +262,85 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
-.containers .portfolio .p1, .p2, .p3{
-    line-height: 40px;
-    border-radius: 10px;
-    width: 25%;
+.contactform{
+    border: solid black;
     position: relative;
-    border: solid red;
-    padding-left: 20px ;
-    padding-right: 20px;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 5%;
-    font-weight: 600;
-    font-family: Source Sans Pro;
-
-}
-.containers .services{
-    line-height: 40px;
-    border-radius: 10px;
-    width: 35%;
-    position: relative;
-    padding-left: 20px ;
-    padding-right: 20px;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 5%;
-    font-weight: 600;
-    font-family: Source Sans Pro;
+    width: 30%;
+    display: grid;
+    justify-content: center;
 }
 
-.containers .services li{
-    list-style: none;
-    font-weight: 900;
-    line-height: 60px;
+.contactform input{
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgb(18, 18, 18);
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.5s;
 }
-
-.containers .services li:hover{
-    background: rgb(206, 206, 206);
-    padding: 10px;
-    margin: 5px;
+.contactform span{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.contactform input:valid~span,
+.contactform input:focus~span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1em;
+    padding: 0px 10px;
+    background: rgb(18, 18, 18);
+    border-right: 1px solid #00dfc4;
+    border-left: 1px solid #00dfc4;
+    letter-spacing: 0.2em;    
+}
+.contactform input:valid,
+.contactform input:focus{
+    border: 1px solid #00dfc4;
+}
+.contactform:nth-child(2) input:valid~span,
+.contactform:nth-child(2) input:focus~span{
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+.buttonsf{
+    background-color: #577f7a;
     color: white;
+    width: 40%;
+    height: 10%;
 }
+
+.contactlink{
+    border: solid saddlebrown;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    display: grid;
+    width: 50%;
+
+
+}
+.contactlink i{
+
+    font-size: 2.5rem;
+    color: #919191;
+    margin: 10px;
+}
+
+
+
+
 
 
 
