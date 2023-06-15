@@ -252,7 +252,6 @@ h2{
 
 /*css for contact page*/
 .containersc{
-    border: solid red;
     top: 15%;
     position:absolute;
     width: 100%;
@@ -263,13 +262,11 @@ h2{
     justify-content: center;
 }
 .contactform{
-    border: solid black;
     position: relative;
     width: 30%;
     display: grid;
     justify-content: center;
 }
-
 .contactform input{
     width: 95%;
     padding: 15px;
@@ -318,24 +315,34 @@ h2{
     background-color: #577f7a;
     color: white;
     width: 40%;
-    height: 10%;
+    height: 15%;
+    margin-left: 25%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-
 .contactlink{
-    border: solid saddlebrown;
+    top: 40%;
+    margin-left: 10%;
+    line-height: 40px;
+    border-radius: 10px;
+    width: 30%;
+    position: absolute;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: 20px;
     text-align: center;
-    font-family: sans-serif;
-    position: relative;
-    display: grid;
-    width: 50%;
-
-
+    font-weight: 600;
 }
-.contactlink i{
 
+.contactlink i{
+    width: 10%;
+    border-radius: 100%;
+    height: 100%;
     font-size: 2.5rem;
-    color: #919191;
+    color: rgb(210, 210, 210);
     margin: 10px;
+    text-align: center;
 }
 
 
