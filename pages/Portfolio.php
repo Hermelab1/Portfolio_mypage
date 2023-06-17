@@ -25,35 +25,30 @@
                     <div class="p1">
                         <div class="overlay">
                             <h3>EVENT ORGANAZER WEB SITE</h3>
-                            <p>I was developed a website for our event organizer company using Html, CSS, JavaScript, and backend PHP MySQL.</p>
+                            <p>I developed a website for event organizer company using Html, CSS, JavaScript, and backend PHP MySQL.</p>
                         </div>
     
                     </div>
                     <div class="p2">
                         <div class="overlay">
                             <h3>SCHOOL MANAGEMENT SYSTERM</h3>
-                            <p>For my Senior year project, I am developing a School Management system for ADMAS University using laravel php framwork</p>
+                            <p>As a team we developed a School Management system for ADMAS University using laravel php framwork</p>
                         </div>
                     </div>
                     <div class="p3">
                         <div class="overlay">
                             <h3>RENT MANAGEMENT SYSTEM</h3>
-                            <p>I developed Rent Management System for landloaders company designed to stream line their operation & improve efficency using C# windows form application in the backend MSSQL</p>
+                            <p>I developed Rent Management System for landloaders company using C# windows form application backend MSSQL</p>
                         </div>
-                    </div>
-
-                         
+                    </div>         
                 </div>
-                
-                
-                 
             </section>
             <section class="card2">
-                <a href="Home.html"><i class="fa-solid fa-house"></i></a>
-                <a href="About.html"><i class="fa-solid fa-user"></i></a>
-                <a href="Portfolio.html"><i class="fa-solid fa-briefcase"></i></a>
-                <a href="Services.html"><i class="fa-sharp fa-solid fa-address-card"></i></a>
-                <a href="Contact.html"><i class="fa-solid fa-address-book"></i></a>    
+                <a href="Home.php"><i class="fa-solid fa-house"></i></a>
+                <a href="About.php"><i class="fa-solid fa-user"></i></a>
+                <a href="Portfolio.php"><i class="fa-solid fa-briefcase"></i></a>
+                <a href="Services.php"><i class="fa-sharp fa-solid fa-address-card"></i></a>
+                <a href="Contact.php"><i class="fa-solid fa-address-book"></i></a>      
             </section>
         </div>
     </body>

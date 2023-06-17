@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <title>HOME  |  HERMELA BIRHANU RESUME</title>
+        <title>ABOUT  |  HERMELA BIRHANU RESUME</title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
         <!-- Google Fonts Roboto -->
@@ -19,17 +19,20 @@
             </div>
         </header>
         <div class="container">
-            <section class="card1">
-                <h2>Welcome to my portfolio webpage</h2>
-                <p>I am Hermela Birhanu, a web & web app developer</p>
- 
+            <section class="containers">
+                <h2>ABOUT ME</h2>
+                <div class="images"><img src="" alt=""></div>
+                <div class="history">
+                    <p>I am Hermela Birhanu, a web developer with a passion for creating beautiful and functional websites, web apps & also desktop apps. I have experience in HTML, CSS, JavaScript, C#, PHP and SQL. I invite you to explore some of my projects and contact me if you are interested in working with me.</p>
+                    <button><a href="../cvfile/Profile.pdf">DOWNLOAD CV</a></button>
+                </div>
             </section>
             <section class="card2">
-                <a href="Home.html"><i class="fa-solid fa-house"></i></a>
-                <a href="about.html"><i class="fa-solid fa-user"></i></a>
-                <a href="portfolio.html"><i class="fa-solid fa-briefcase"></i></a>
-                <a href="about.html"><i class="fa-sharp fa-solid fa-address-card"></i></a>
-                <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>   
+                <a href="Home.php"><i class="fa-solid fa-house"></i></a>
+                <a href="About.php"><i class="fa-solid fa-user"></i></a>
+                <a href="Portfolio.php"><i class="fa-solid fa-briefcase"></i></a>
+                <a href="Services.php"><i class="fa-sharp fa-solid fa-address-card"></i></a>
+                <a href="Contact.php"><i class="fa-solid fa-address-book"></i></a>  
             </section>
         </div>
     </body>
